@@ -421,7 +421,7 @@
     }
     if ([[_pageManager pages] count] == 0) {
 //        [self tabBarViewNewTabButtonDidClick];
-        [self openLinkInNewTab:@"http://www.twitter.com/"];
+        [self openLinkInNewTab:@"about://blank"];
         [NSTimer scheduledTimerWithTimeInterval:0.20 target:_urlField selector:@selector(becomeFirstResponder) userInfo:nil repeats:NO];
     }
 }
