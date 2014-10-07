@@ -11,10 +11,13 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "iConsole.h"
 #endif
 
 
 // polipo
 #define HAS_STDINT_H
+
+#define NSLog(...) [iConsole log:__VA_ARGS__]
 
 #define _L(s) NSLocalizedString(@#s, nil)

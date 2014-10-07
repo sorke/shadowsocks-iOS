@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 clowwindy. All rights reserved.
 //
 #import <Crashlytics/Crashlytics.h>
+#import "iConsole.h"
 
 #import "GZIP.h"
 #import "AppProxyCap.h"
@@ -84,7 +85,7 @@ void polipo_exit();
     self.networkActivityIndicatorManager = [[SWBNetworkActivityIndicatorManager alloc] init];
 
 
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[iConsoleWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.viewController = [[SWBViewController alloc] init];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

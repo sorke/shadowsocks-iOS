@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0487964E19E41EA500224BE8 /* iConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487964D19E41EA500224BE8 /* iConsole.m */; };
+		0487965219E41EB200224BE8 /* GTMStackTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487965119E41EB200224BE8 /* GTMStackTrace.m */; };
 		6205309618D4443E00887D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621571AA16CF6BCB003D96B4 /* Foundation.framework */; };
 		6205309918D4443E00887D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205309818D4443E00887D3E /* main.m */; };
 		620530A518D4444E00887D3E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629AC93F18B49C33001D2771 /* SystemConfiguration.framework */; };
@@ -204,6 +206,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0487964C19E41EA500224BE8 /* iConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iConsole.h; sourceTree = "<group>"; };
+		0487964D19E41EA500224BE8 /* iConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iConsole.m; sourceTree = "<group>"; };
+		0487965019E41EB200224BE8 /* GTMStackTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMStackTrace.h; sourceTree = "<group>"; };
+		0487965119E41EB200224BE8 /* GTMStackTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStackTrace.m; sourceTree = "<group>"; };
 		6205309518D4443E00887D3E /* shadowsocks_sysconf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shadowsocks_sysconf; sourceTree = BUILT_PRODUCTS_DIR; };
 		6205309818D4443E00887D3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6205309B18D4443E00887D3E /* shadowsocks_sysconf-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shadowsocks_sysconf-Prefix.pch"; sourceTree = "<group>"; };
@@ -465,6 +471,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0487964B19E41EA500224BE8 /* iConsole */ = {
+			isa = PBXGroup;
+			children = (
+				0487964C19E41EA500224BE8 /* iConsole.h */,
+				0487964D19E41EA500224BE8 /* iConsole.m */,
+			);
+			name = iConsole;
+			path = iConsole/iConsole;
+			sourceTree = SOURCE_ROOT;
+		};
+		0487964F19E41EB200224BE8 /* GTM */ = {
+			isa = PBXGroup;
+			children = (
+				0487965019E41EB200224BE8 /* GTMStackTrace.h */,
+				0487965119E41EB200224BE8 /* GTMStackTrace.m */,
+			);
+			name = GTM;
+			path = iConsole/GTM;
+			sourceTree = SOURCE_ROOT;
+		};
 		6205309718D4443E00887D3E /* shadowsocks_sysconf */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +569,8 @@
 		621571AE16CF6BCB003D96B4 /* ShadowWeb */ = {
 			isa = PBXGroup;
 			children = (
+				0487964F19E41EB200224BE8 /* GTM */,
+				0487964B19E41EA500224BE8 /* iConsole */,
 				62E27E5618C1D0C00086033D /* gzip */,
 				6274845918B1FD4000A9CDF0 /* ZXingObjC.xcodeproj */,
 				626C4AD818B1E338003DBE33 /* base64 */,
@@ -1102,6 +1130,7 @@
 				621FCC0417603FFA00411E5F /* GCDWebServerRequest.m in Sources */,
 				621FCC0517603FFA00411E5F /* GCDWebServerResponse.m in Sources */,
 				EB1891FD5CE9480608918422 /* SimpleTableViewSource.m in Sources */,
+				0487965219E41EB200224BE8 /* GTMStackTrace.m in Sources */,
 				62D85A8D176DA6FC00FE5575 /* atom.c in Sources */,
 				62D85A8E176DA6FC00FE5575 /* auth.c in Sources */,
 				62D85A90176DA6FC00FE5575 /* chunk.c in Sources */,
@@ -1119,6 +1148,7 @@
 				62E27E5918C1D0CF0086033D /* GZIP.m in Sources */,
 				62D85AA0176DA6FC00FE5575 /* local.c in Sources */,
 				626C4ADB18B1E352003DBE33 /* NSData+Base64.m in Sources */,
+				0487964E19E41EA500224BE8 /* iConsole.m in Sources */,
 				62D85AA2176DA6FC00FE5575 /* log.c in Sources */,
 				62D85AA3176DA6FC00FE5575 /* main.c in Sources */,
 				62D85AA4176DA6FC00FE5575 /* Makefile in Sources */,
